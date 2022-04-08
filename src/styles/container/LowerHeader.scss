@@ -1,0 +1,34 @@
+.lower-header-container {
+  position: relative;
+  top: 65px;
+  height: 40px;
+  background-color: #232f3e;
+
+  .lower-header {
+    height: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 80px 3fr 1fr;
+
+    .lower-menu-container {
+      background-color: rgb(38, 145, 238);
+
+      .lower-menu {
+
+        .lower-menu-icon {}
+
+        .lower-menu-text {}
+      }
+    }
+
+    .lower-navigation-container {
+      background-color: blueviolet;
+    }
+
+    .lower-prime-container {
+      background-color: peru;
+    }
+  }
+}

@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./Header";
+import { UpperHeader } from "./UpperHeader";
+import { LowerHeader } from "./LowerHeader";
 
 const TopBar = () => {
   return (
-    <>
-      <Header />
-    </>
+    <header className="header">
+      <UpperHeader />
+      <LowerHeader />
+    </header>
   );
 };
 
