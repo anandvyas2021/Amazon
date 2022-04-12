@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "../../../styles/container/UpperHeader.scss";
 import logo from "../../../assets/amazon.png";
 
-import { Search } from "../../../custom/Header/Search";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocationDot,
+  faMagnifyingGlass,
+  faCaretDown,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import SearchIcon from "@material-ui/icons/Search";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import { Search } from "../../../custom/Header/Search";
 
 const UpperHeader = () => {
   const [login, setlogin] = useState(true);
@@ -32,7 +35,10 @@ const UpperHeader = () => {
           <div className="upper-header-address-container box">
             <div className="upper-header-address">
               <div>
-                <LocationOnIcon className="upper-location-icon" />
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="upper-location-icon"
+                />
               </div>
               <div className="upper-address-text">
                 <span className="first-line">
@@ -55,7 +61,10 @@ const UpperHeader = () => {
               <input className="upper-search" />
             </div>
             <div className="upper-search-btn-container">
-              <SearchIcon className="upper-search-icon" />
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="upper-search-icon"
+              />
             </div>
           </div>
         </div>
@@ -74,7 +83,10 @@ const UpperHeader = () => {
                 <span className="second-line">{"Account & Lists"}</span>
               </div>
               <div>
-                <ArrowDropDownIcon className="upper-dropdown-icon" />
+                <FontAwesomeIcon
+                  icon={faCaretDown}
+                  className="upper-dropdown-icon"
+                />
               </div>
             </div>
           </div>
@@ -86,7 +98,10 @@ const UpperHeader = () => {
                 <span className="second-line">{"& Orders"} </span>
               </div>
               <div>
-                <ArrowDropDownIcon className="dropdown-icon" />
+                <FontAwesomeIcon
+                  icon={faCaretDown}
+                  className="upper-dropdown-icon"
+                />
               </div>
             </div>
           </div>
@@ -95,7 +110,10 @@ const UpperHeader = () => {
             <div className="upper-header-cart">
               <div className="upper-header-cart-basket">
                 <div>{itemsCount}</div>
-                <ShoppingCartOutlinedIcon className="cart-icon" />
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  className="upper-cart-icon"
+                />
               </div>
               <div className="upper-cart-text">Cart</div>
             </div>
