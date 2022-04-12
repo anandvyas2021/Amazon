@@ -2,33 +2,104 @@
   position: relative;
   top: 65px;
   height: 40px;
+  color: white;
   background-color: #232f3e;
 
+
   .lower-header {
+    box-sizing: border-box;
     height: 40px;
     max-width: 1500px;
     margin: 0 auto;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 80px 3fr 1fr;
 
     .lower-menu-container {
-      background-color: rgb(38, 145, 238);
+      display: flex;
+      justify-content: center;
+      // background-color: rgb(41, 38, 238);
 
       .lower-menu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        // background-color: aquamarine;
 
-        .lower-menu-icon {}
+        .lower-menu-icon {
+          font-size: 20px;
+          margin: 0 3px 0 0;
+        }
 
-        .lower-menu-text {}
+        .lower-menu-text {
+          font-size: 15px;
+        }
       }
     }
 
     .lower-navigation-container {
-      background-color: blueviolet;
+      box-sizing: border-box;
+      display: flex;
+      // background-color: blueviolet;
+
+      .lower-navigation {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        margin: 5px;
+        font-weight: 600;
+        // background-color: aquamarine;
+
+        .lower-navigation-item {
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 2px;
+          padding: 0 5px;
+          border: 2px solid #232f3e;
+          cursor: pointer;
+          // background-color: darkkhaki;
+
+          .lower-navigation-link {
+            box-sizing: border-box;
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+            letter-spacing: -0.5px;
+            // background-color: #ff3c00;
+          }
+        }
+      }
     }
 
     .lower-prime-container {
-      background-color: peru;
+      box-sizing: border-box;
+      display: flex;
+      // background-color: rgb(30, 209, 54);
+
+      .lower-prime {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 95%;
+        border: 2px solid #232f3e;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
+}
+
+.box:hover {
+  overflow: hidden;
+  border: 2px solid white !important;
+  border-radius: 5px;
 }

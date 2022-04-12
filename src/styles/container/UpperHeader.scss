@@ -18,11 +18,11 @@
     // background-color: rgb(11, 104, 73);
 
     .upper-header-left-section {
+      box-sizing: border-box;
       height: 50px;
       width: 100%;
       display: grid;
       grid-template-columns: 150px 1fr;
-      box-sizing: border-box;
       gap: 5px;
       // background-color: rgb(230, 139, 22);
 
@@ -53,8 +53,6 @@
             margin-top: -12px;
           }
         }
-
-
       }
 
       .upper-header-address-container {
@@ -69,10 +67,10 @@
           display: flex;
           // background-color: rgb(96, 156, 94);
 
-
           .upper-location-icon {
             color: white;
-            margin-top: 13px;
+            margin: 15px 3px 0 0;
+            font-size: 1.2rem;
           }
 
           .upper-address-text {
@@ -81,8 +79,6 @@
             line-height: 17px;
           }
         }
-
-
       }
     }
 
@@ -141,7 +137,7 @@
           background-color: #f0a709;
 
           .upper-search-icon {
-            font-size: 30px;
+            font-size: 20px;
             color: black;
           }
         }
@@ -182,7 +178,7 @@
           }
 
           .upper-dropdown-icon {
-            margin-top: 22px;
+            margin: 22px 0 0 5px;
           }
         }
       }
@@ -207,7 +203,7 @@
           }
 
           .upper-dropdown-icon {
-            margin-top: 22px;
+            margin: 22px 0 0 5px;
           }
         }
       }
@@ -232,6 +228,11 @@
             justify-content: center;
             align-items: center;
             line-height: 10px;
+          }
+
+          .upper-cart-icon {
+            font-size: 1.2rem;
+            margin: 1px 5px 0 0;
           }
 
           .upper-cart-text {
