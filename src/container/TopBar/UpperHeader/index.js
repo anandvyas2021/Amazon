@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../../styles/container/UpperHeader.scss";
+import "./UpperHeader.scss";
+
 import logo from "../../../assets/amazon.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +9,7 @@ import {
   faMagnifyingGlass,
   faCaretDown,
   faCartShopping,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Search } from "../../../custom/Header/Search";
@@ -24,6 +26,9 @@ const UpperHeader = () => {
     <div className="upper-header-container">
       <div className="upper-header">
         <div className="upper-header-left-section">
+          <div className="upper-header-menu-icon">
+            <FontAwesomeIcon icon={faBars} className="upper-location-icon" />
+          </div>
           <div className="upper-header-logo-container box">
             <div className="upper-header-logo">
               <a href="/">

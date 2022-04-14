@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/container/LowerHeader.scss";
+import "./LowerHeader.scss";
 
 import PrimeImg from "../../../assets/prime image.jpg";
 

@@ -9,30 +9,36 @@
 
   .upper-header {
     box-sizing: border-box;
-    max-width: 1500px;
+    max-width: 1920px;
     height: 50px;
     margin: 7.5px auto;
     display: grid;
     grid-template-columns: 1.6fr 3fr 2fr;
     gap: 5px;
-    // background-color: rgb(11, 104, 73);
+    background-color: rgb(11, 104, 73);
 
     .upper-header-left-section {
       box-sizing: border-box;
       height: 50px;
       width: 100%;
       display: grid;
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 30px 150px 1fr;
       gap: 5px;
-      // background-color: rgb(230, 139, 22);
+      background-color: rgb(230, 139, 22);
+
+      .upper-header-menu-icon {
+        display: none;
+      }
 
       .upper-header-logo-container {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: #0a0a9e;
+        background-color: #0a0a9e;
         cursor: pointer;
+
+
 
         .upper-header-logo {
           width: 120px;
@@ -40,7 +46,7 @@
           margin-top: 10px;
           justify-content: center;
           align-items: center;
-          // background-color: #10a5e0;
+          background-color: #10a5e0;
 
           .upper-image {
             width: 100%;
@@ -61,11 +67,11 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // background-color: #0db34c;
+        background-color: #0db34c;
 
         .upper-header-address {
           display: flex;
-          // background-color: rgb(96, 156, 94);
+          background-color: rgb(96, 156, 94);
 
           .upper-location-icon {
             color: white;
@@ -86,7 +92,7 @@
       box-sizing: border-box;
       height: 50px;
       padding: 5px;
-      // background-color: rgb(29, 212, 212); 
+      background-color: rgb(29, 212, 212);
 
       .upper-search-container {
         box-sizing: border-box;
@@ -95,7 +101,7 @@
         grid-template-columns: 60px 1fr 50px;
         border: 1px solid #131921;
         border-radius: 5px;
-        // background-color: burlywood;
+        background-color: burlywood;
 
         .upper-search-categories-container {
           box-sizing: border-box;
@@ -115,7 +121,7 @@
 
         .upper-search-bar-container {
           box-sizing: border-box;
-          // background-color: chocolate;
+          background-color: chocolate;
 
           .upper-search {
             box-sizing: border-box;
@@ -151,11 +157,11 @@
       grid-template-columns: 0.6fr 1.5fr 1fr 1fr;
       box-sizing: border-box;
       gap: 3px;
-      // background-color: rgb(179, 58, 28);
+      background-color: rgb(179, 58, 28);
 
       .upper-header-language-container {
         cursor: pointer;
-        // background-color: blueviolet;
+        background-color: blueviolet;
       }
 
       .upper-header-account-container {
@@ -164,7 +170,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // background-color: aqua;
+        background-color: aqua;
 
         .upper-header-account {
           display: flex;
@@ -189,7 +195,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // background-color: cadetblue;
+        background-color: cadetblue;
 
         .upper-header-orders {
           display: flex;
@@ -214,7 +220,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // background-color: rgb(26, 169, 226);
+        background-color: rgb(26, 169, 226);
 
         .upper-header-cart {
           box-sizing: border-box;
@@ -265,3 +271,27 @@
 //   transform: scale(1.1);
 //   ;
 // }
+
+@media only screen and (max-width:768px) {
+  .upper-header-container {
+    .upper-header {
+      display: block;
+
+      .upper-header-left-section {
+        .upper-header-menu-icon {
+          display: block;
+          font-size: 25px;
+          padding: 7px;
+        }
+
+        .upper-header-logo-container {
+          .upper-header-logo {
+            width: 110px;
+            margin: 0;
+          }
+
+        }
+      }
+    }
+  }
+}
